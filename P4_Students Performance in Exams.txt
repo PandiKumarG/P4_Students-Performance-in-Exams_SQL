@@ -1,0 +1,40 @@
+Project
+P4 – Students Performance in Exams (SQL Analysis)
+
+Dataset Name
+Students Performance in Exams
+
+Dataset Source
+Kaggle: https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
+
+Dataset Overview
+The dataset contains academic performance records of 1,000 students. It includes demographic information, parental education, lunch type, test preparation course status, and scores obtained in three subjects.
+
+Dataset Statistics
+- Total Records: 1,000
+- Total Columns: 8
+- Missing Values: None
+- Duplicate Records: None
+
+Column Description
+1. gender – Gender of the student (male/female).
+2. race/ethnicity – Student's race/ethnicity group (Group A to Group E).
+3. parental level of education – Highest education level of the student's parent.
+4. lunch – Type of lunch received (standard/free or reduced).
+5. test preparation course – Whether the student completed the test preparation course (completed/none).
+6. math score – Mathematics examination score.
+7. reading score – Reading examination score.
+8. writing score – Writing examination score.
+
+Database Details
+- Database: PostgreSQL
+- Table Name: project_4_students_performance_in_exams
+- Schema: public
+
+Notes
+- The original dataset does not contain a student ID or student name.
+- A supplementary lookup table named `test_preparation_mode` was created for JOIN practice.
+- The lookup table uses an illustrative mapping:
+  - completed → Online
+  - none → Offline
+- The Online/Offline mapping is created solely for SQL practice and does not represent actual course delivery modes in the original dataset.
